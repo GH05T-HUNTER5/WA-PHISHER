@@ -1,4 +1,4 @@
-#!/bin/bash
+# GH05T-HUNTER5
 clear
 bann () {
 echo "
