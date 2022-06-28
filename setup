@@ -1,0 +1,57 @@
+#!/bin/bash
+clear
+bann () {
+echo "
+ ██╗    ██╗ █████╗       ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██████╗
+ ██║    ██║██╔══██╗      ██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██╔══██╗
+ ██║ █╗ ██║███████║█████╗██████╔╝███████║██║███████╗███████║█████╗  ██████╔╝
+ ██║███╗██║██╔══██║╚════╝██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗
+ ╚███╔███╔╝██║  ██║      ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║
+  ╚══╝╚══╝ ╚═╝  ╚═╝      ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝"
+echo " Authors : GH05T-HUNTER5                                    { Ver : 1.0.1 }"
+echo ""
+}
+bann # 3D Banner Command
+pkg install python -y >> /dev/null 2>&1
+pkg install python2 -y >> /dev/null 2>&1
+pkg install python3 -y >> /dev/null 2>&1
+pkg install php -y >> /dev/null 2>&1
+pkg install ruby -y >> /dev/null 2>&1
+pkg install wget -y >> /dev/null 2>&1
+pkg install nodejs -y >> /dev/null 2>&1
+pkg install tor -y >> /dev/null 2>&1
+pkg install zip -y >> /dev/null 2>&1
+apt-get install ruby -y >> /dev/null 2>&1
+apt install gem -y >> /dev/null 2>&1
+gem install lolcat >> /dev/null 2>&1
+apt install gnome-terminal -y >> /dev/null 2>&1
+apt-get install apache2 -y >> /dev/null 2>&1
+if [ -f /data/data/com.termux/files/usr/bin/termux-change-repo ]; then
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip --no-check-certificate >> /dev/null 2>&1
+unzip ngrok-stable-linux-arm.zip >> /dev/null 2>&1
+else
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip --no-check-certificate >> /dev/null 2>&1
+unzip ngrok-stable-linux-amd64.zip >> /dev/null 2>&1
+fi
+if [[ `pidof php` ]]; then
+killall php > /dev/null 2>&1
+fi #Trying to kill all php
+if [[ `pidof ngrok` ]]; then
+killall ngrok > /dev/null 2>&1
+fi #Trying to kill all ngrok
+bash ngrok-stable-linux.sh
+xdg-open https://dashboard.ngrok.com/signup > /dev/null 2>&1
+clear #Trying to clear your display
+bann # 3D Banner Command
+read -p " Enter The Ngrok Token : " authto
+read -p " Enter your name : " name
+read -p " Create a new password : " passs
+sleep 3
+echo " Name : $name  , Password : $passs" >> password.txt
+clear
+chmod +x ngrok
+sleep 1
+$authto
+clear
+rm setup
+exit
