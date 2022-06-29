@@ -53,6 +53,7 @@ clear
 chmod +x ngrok
 sleep 1
 $authto
+sleep 1
 clear
 rm ngrok-stable-linux.sh
 rm setup
