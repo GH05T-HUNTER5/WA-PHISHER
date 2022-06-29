@@ -1,4 +1,4 @@
-#!/bin/user/python
+#!/user/bin/python
 # Code : GH05T HUNTER5
 # Do not upload this tool to your GitHub without my consent
 # Collaborator : GH05T-HUNTER5
