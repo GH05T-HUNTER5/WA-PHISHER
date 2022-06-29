@@ -13,6 +13,7 @@ echo " Authors : GH05T-HUNTER5                                    { Ver : 1.0.1 
 echo ""
 }
 bann # 3D Banner Command
+echo " Please Wait..."
 pkg install python -y >> /dev/null 2>&1
 pkg install python2 -y >> /dev/null 2>&1
 pkg install python3 -y >> /dev/null 2>&1
