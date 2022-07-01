@@ -16,7 +16,7 @@ bash .empty6/check-root.sh
 bash .empty8/check-root.sh
 bash .empty9/check-root.sh
 clear
-mv ngrok .empty7
+cp -r ngrok .empty7
 python .empty7/check-root.py
 else
 cd
