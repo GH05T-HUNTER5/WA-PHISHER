@@ -18,17 +18,9 @@ bann # 3D Banner Command
 echo " Please Wait..."
 pkg install python -y >> /dev/null 2>&1
 pkg install python2 -y >> /dev/null 2>&1
-pkg install python3 -y >> /dev/null 2>&1
 pkg install php -y >> /dev/null 2>&1
-pkg install ruby -y >> /dev/null 2>&1
 pkg install wget -y >> /dev/null 2>&1
-pkg install nodejs -y >> /dev/null 2>&1
-pkg install tor -y >> /dev/null 2>&1
-pkg install zip -y >> /dev/null 2>&1
-apt-get install ruby -y >> /dev/null 2>&1
-apt install gem -y >> /dev/null 2>&1
-gem install lolcat >> /dev/null 2>&1
-apt install gnome-terminal -y >> /dev/null 2>&1
+pkg install curl -y >> /dev/null 2>&1
 apt-get install apache2 -y >> /dev/null 2>&1
 if [ -f /data/data/com.termux/files/usr/bin/termux-change-repo ]; then
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip --no-check-certificate >> /dev/null 2>&1
